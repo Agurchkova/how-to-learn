@@ -18,7 +18,7 @@
   position: relative;
   background-color: #f2f2f2;
   overflow: hidden;
-  z-index: 1;
+  z-index: 2;
   /* выше установили ограничения для секции */
 }
 .logo_place_header {
@@ -29,11 +29,9 @@
   height: 32px;
 }
 .header__title {
-  width: 730px;
+  max-width: 730px;
   bottom: 30px;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
@@ -43,7 +41,7 @@
   width: 388px;
   bottom: 30px;
   left: 64px;
-  margin: 0%;
+  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -58,7 +56,7 @@
   bottom: 0px;
   width: 765px;
   height: 608px;
-  z-index: -1;
+  z-index: 1;
 }
 .header__square-pic {
   position: absolute;
@@ -67,19 +65,17 @@
   top: 64px;
   right: 0px;
   background-color: #2f80ed;
-  z-index: -2;
+  z-index: 0;
 }
 .description {
   position: relative;
   margin-top: 100px;
-  margin-bottom: 100px;
 }
 .two-columns {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 .two-columns__brief {
   line-height: 1.2;
@@ -92,6 +88,7 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
+  list-style: none;
 }
 .two-columns__paragraph {
   line-height: 34px;
@@ -153,14 +150,14 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin: 0;
 }
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .feynman {
   position: relative;
@@ -212,6 +209,7 @@
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
+  z-index: 1;
 }
 .section-title_theme_dark {
   line-height: 1.15;
@@ -220,6 +218,7 @@
   width: 60%;
   margin-top: 90px;
   color: white;
+  z-index: 1;
 }
 .section-subtitle_theme_dark {
   line-height: 34px;
@@ -263,7 +262,7 @@
   right: -210px;
   width: 877px;
   height: 877px;
-  z-index: 0;
+  z-index: -1;
 }
 .footer {
   background-color: #1f1f1f;
@@ -311,7 +310,7 @@
 }
 .footer__column-link {
   list-style: none;
-  margin: 0 0;
+  margin: 0;
   padding-left: 0;
   color: white;
   text-decoration: none;
