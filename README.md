@@ -21,6 +21,6 @@
 <li>API Youtube</li>
 <li>Iframe</li>
 
-## Ссылка на проект
+## Ссылка на проект на Github Pages
 https://Agurchkova.github.io/how-to-learn/
 <p align="right"><a href="#" title="Вернуться к началу" >Наверх</a></p>
